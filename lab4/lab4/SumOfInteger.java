@@ -1,0 +1,35 @@
+/**
+ * Name:Chinmayi J
+ * Description: sum of all integers.
+ * Date :18/03/21
+  */
+
+
+
+package lab4;
+import java.util.Scanner;
+
+public class SumOfInteger {
+
+	private static Scanner sc;
+
+	public static void main(String[] args) {
+		sc = new Scanner(System.in);
+		System.out.println("Enter the number of items");
+		final int NUM_ITEMS=sc.nextInt();
+		int sum=0;
+		String [] strArr=new String[NUM_ITEMS];
+		System.out.println("Enter the value of the items ");
+		for(int i=0;i<strArr.length;i++)
+			strArr[i]=sc.next();
+         for(int i=0;i<strArr.length;i++)
+         {
+        	 sum+=(Integer.parseInt(strArr[i]));
+         }
+		System.out.println("the sum is"+sum);
+
+	}
+
+	}
+
+
